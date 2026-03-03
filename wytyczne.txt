@@ -1,0 +1,89 @@
+
+ 
+
+Załącznik nr 2 do Zarządzenia nr 88/2023  Rektora Państwowej Akademii Nauk Stosowanych im. Ignacego Mościckiego w Ciechanowie z dnia 29 grudnia 2023 r.     
+ 
+ 
+REDAKCJA PRACY DYPLOMOWEJ 
+ 
+Praca powinna być napisana w programie MS WORD i zapisana w formacie *.doc lub *.docx.  
+ 
+ Ustawienia dokumentu: 
+# czcionka: Times New Roman lub Arial (jedna w całej pracy); 
+# wielkość czcionki: 
+-	tekst główny: 12, 
+-	tytuły rozdziałów – wielkie litery, pogrubiona: 14 pkt.,  
+-	tytuły podrozdziałów - pogrubiona: 13 pkt., 
+-	przypisy: 10 pkt; 
+# interlinia (odstępy między wierszami) – 1,5 pkt.; 
+# marginesy: 
+- lewy – 3,5; prawy – 3,5; górny – 2,5; dolny – 2,5;  
+# akapity wyróżnione tabulatorem – 1,25 cm; 
+# numerowanie – dół strony, środek, brak numeru na stronie tytułowej, strona kolejna zaczyna się od numeru 2; 
+# tekst musi być wyjustowany (wyrównany do prawej i lewej); 
+# tekst pracy drukowany obustronnie lub jednostronnie (nie dotyczy strony tytułowej).
+Wskazówki edytorskie: 
+# kolejne rozdziały zawsze rozpoczynamy od nowej strony;  
+# nazwy łacińskie w tekście i cytaty oznaczamy kursywą (Uwaga! Stosując kursywę nie używamy cudzysłowów!); 
+# po tytułach rozdziałów, podrozdziałów oraz po tytule pracy nie stawia się kropek; 
+# nigdy nie należy zaczynać rozdziału lub podrozdziału tabelą lub rysunkiem; 
+# nie należy zostawiać pojedynczych liter na końcu zdania! (Uwaga!  Aby przesunąć wolną literę do następnego wiersza należy ustawić kursor po literze (usunąć spacje) a przed wyrazem i nacisnąć Ctrl+Shift+Spacja (twarda spacja).
+Ryciny: 
+# rycinami nazywamy wszystkie rysunki, zdjęcia, wykresy i schematy 
+# rycina jest zawsze wyśrodkowana 
+# numeracja ciągła według kolejności w całej pracy 
+# tytuł ryciny umieszczamy zawsze pod ryciną, wyrównany do lewej, czcionka pogrubiona, 12 # interlinia w tytule rysunku – 1,0 
+# pod ryciną zawsze musi być umieszczone źródło jej pochodzenia, czcionka – 10 (słowo ‘Źródło:’ – kursywa) # w tekście pracy musi być zawsze odniesienie do ryciny – np. (Ryc. 1). 
+Wykresy: (pojęcie wykres dotyczy wyłącznie wykresów) 
+# wykres jest zawsze wyśrodkowany 
+# numeracja ciągła w całej pracy 
+# tytuł wykresu umieszczamy nad wykresem, wyrównany do lewej krawędzi wykresu, czcionka pogrubiona, 12 pkt. 
+# interlinia w tytule wykresu – 1,0 pkt. 
+# pod wykresem musi być umieszczone źródło jej pochodzenia, czcionka – 10 pkt. (słowo Źródło: i opis – kursywą) 
+# w tekście pracy musi być zawsze odniesienie do wykresu – np. (Wykres 1) 
+Tabele: 
+# tabele zawsze wyśrodkowane 
+# numeracja ciągła według kolejności w całej pracy 
+# tytuł tabeli zawsze nad tabelą, wyrównany do lewej, czcionka pogrubiona, 12 pkt. 
+# ewentualne, dodatkowe wyjaśnienia – pod tabelą, czcionka – 10 pkt. 
+# pod tabelą zawsze musi być umieszczone źródło pochodzenia tabeli, czcionka – 10 pkt. (słowo Źródło: – kursywa) 
+# tekst w tabeli zapisujemy czcionką 10 pkt, odstęp między wersami pojedynczy – interlinia – 1,0 pkt. 
+# w tekście pracy musi być zawsze odniesienie do tabeli – np. (Tab. 1) 
+Wykaz skrótów:  
+# wykaz stanowi zestawienie wszystkich użytych w pracy skrótów wraz z ich wyjaśnieniem, 
+# zastosowanie skrótu po raz pierwszy wymaga użycia w tekście pracy pełnej nazwy,  a następnie   podania   w   nawiasie   za   nią właściwego   skrótu:    Np. Ciechanowskie Towarzystwo Naukowe (CTN) 
+# wszystkie skróty należy stosować konsekwentnie w całej pracy.  
+PRZYPISY 
+ 	Istotą w przygotowaniu pracy magisterskiej jest dokumentowanie źródeł w formie przypisów.    
+Reguły cytowania: 
+1.	Każda myśl, którą zaczerpnęliśmy od innego autora, musi być opatrzona przypisem. 
+2.	Każde zdanie, które dosłownie zaczerpnęliśmy od innego autora, musi być ujęte w cudzysłów i opatrzone przypisem. Przypisy powinny: 
+-	jednoznacznie identyfikować miejsce skąd zaczerpnęliśmy daną myśl/zdanie - powinniśmy zatem przy jego pomocy bez problemu móc znaleźć książkę i miejsce w niej, z którego pochodzi zapożyczenie, 
+-	być konsekwentne - w całym tekście stosujemy ten sam styl cytowania, 
+-	być oszczędne (ekonomiczne). 
+STRUKTURA PRACY DYPLOMOWEJ w zależności od specyfiki kierunku, co określają kierunkowe wytyczne do przygotowania pracy dyplomowej, jednak powinna zawierać:
+•	Licencjackiej/inżynierskiej 
+WSTĘP 
+ROZDZIAŁ I (podstawy teoretyczne) 
+ROZDZIAŁ II (założenia metodologiczne) 	 
+ROZDZIAŁ III (wyniki badań) 
+Uwaga! Zawartość i liczba rozdziałów może być modyfikowana zgodnie z wytycznymi kierunkowymi.
+WNIOSKI I REKOMENDACJE ewentualnie PODSUMOWANIE, jeśli tak zaznaczono w wytycznych kierunkowych
+STRESZCZENIE (zawierające następujące elementy: Wstęp, Cel badań, Materiał i metody, Wyniki, Wnioski) 
+PIŚMIENNICTWO (czasopisma, akty prawne, pozycje zwarte, strony internetowe, inne) 
+SPIS TABEL SPIS RYCIN SPIS ANEKSÓW 
+ 
+•	Magisterskiej 
+WSTĘP 
+ROZDZIAŁ I (podstawy teoretyczne) 
+ROZDZIAŁ II (założenia metodologiczne) 	
+ROZDZIAŁ III (wyniki badań) 
+Uwaga! Zawartość i liczba rozdziałów może być modyfikowana zgodnie z wytycznymi kierunkowymi.
+DYSKUSJA 
+WNIOSKI I REKOMENDACJE ewentualnie POSUMOWANIE, jeśli tak zaznaczono w wytycznych kierunkowych
+STRESZCZENIE 
+PIŚMIENNICTWO (czasopisma, akty prawne, pozycje zwarte, strony internetowe, inne) 
+SPIS TABEL SPIS RYCIN/WYKRESÓW SPIS ANEKSÓW 	 
+ 
+ 
+

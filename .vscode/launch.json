@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Kompilacja pracy (Docker)",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", ""],
+      "preLaunchTask": "Kompilacja pracy (Docker)"
+    },
+    {
+      "name": "Szybka kompilacja (bez bibliografii)",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", ""],
+      "preLaunchTask": "Szybka kompilacja (Docker, bez bibliografii)"
+    },
+    {
+      "name": "Wyczyść pliki kompilacji",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", ""],
+      "preLaunchTask": "Wyczyść pliki kompilacji"
+    }
+  ]
+}

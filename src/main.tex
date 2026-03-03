@@ -1,0 +1,245 @@
+% =============================================================================
+%  Szablon LaTeX pracy dyplomowej
+%  Państwowa Akademia Nauk Stosowanych im. Ignacego Mościckiego w Ciechanowie
+%
+%  Zgodny z Zarządzeniem nr 88/2023 Rektora PANS w Ciechanowie
+%  Kompilacja: pdflatex -> biber -> pdflatex -> pdflatex
+% =============================================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% === Kodowanie i język ===
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{csquotes}
+\usepackage{chngcntr}
+
+% === Czcionka (klon Times New Roman) ===
+\usepackage{newtxtext,newtxmath}
+
+% === Marginesy: lewy 3.5, prawy 3.5, górny 2.5, dolny 2.5 ===
+\usepackage[left=3.5cm,right=3.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% === Interlinia 1.5 ===
+\usepackage{setspace}
+\onehalfspacing
+
+% === Wcięcie akapitowe 1.25 cm (także po nagłówkach) ===
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% === Nagłówki i stopki — numer strony na dole, wyśrodkowany ===
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+% === Grafika ===
+\usepackage{graphicx}
+\graphicspath{{obrazy/}}
+\usepackage{float}
+
+% === Tabele ===
+\usepackage{array,booktabs,longtable,tabularx}
+
+% === Podpisy rycin i tabel ===
+\usepackage{caption}
+
+% Ryciny: tytuł pod ryciną, wyrównany do lewej, pogrubiony 12pt, interlinia 1.0
+\captionsetup[figure]{
+  labelfont=bf,
+  textfont=bf,
+  font={normalsize,singlespacing},
+  justification=raggedright,
+  singlelinecheck=false,
+  labelsep=period,
+  name={Ryc.}
+}
+
+% Tabele: tytuł nad tabelą, wyrównany do lewej, pogrubiony 12pt, interlinia 1.0
+\captionsetup[table]{
+  labelfont=bf,
+  textfont=bf,
+  font={normalsize,singlespacing},
+  justification=raggedright,
+  singlelinecheck=false,
+  labelsep=period,
+  name={Tab.},
+  position=above
+}
+
+% === Ciągła numeracja rycin i tabel w całej pracy ===
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+% === Wykresy — osobny typ obiektu pływającego ===
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[
+  fileext=low,
+  listname={Spis wykresów},
+  name={Wykres},
+  placement=htbp,
+  within=none
+]{wykres}
+\captionsetup[wykres]{
+  labelfont=bf,
+  textfont=bf,
+  font={normalsize,singlespacing},
+  justification=raggedright,
+  singlelinecheck=false,
+  labelsep=period,
+  position=above
+}
+
+% === Wykresy (pgfplots) ===
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% === Listy ===
+\usepackage{enumitem}
+
+% === Formatowanie rozdziałów i podrozdziałów ===
+\usepackage{titlesec}
+
+\addto\captionspolish{%
+  \renewcommand{\chaptername}{ROZDZIAŁ}%
+  \renewcommand{\listfigurename}{Spis rycin}%
+}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+% Rozdziały numerowane: 14pt, pogrubione, wielkie litery, wyśrodkowane
+\titleformat{\chapter}[display]
+  {\normalfont\fontsize{14}{16.8}\bfseries\centering}
+  {\chaptername\ \thechapter}
+  {6pt}
+  {\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Rozdziały nienumerowane: 14pt, pogrubione, wielkie litery, wyśrodkowane
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\fontsize{14}{16.8}\bfseries\centering}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+% Podrozdziały: 13pt, pogrubione
+\titleformat{\section}
+  {\normalfont\fontsize{13}{15.6}\bfseries}
+  {\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Pod-podrozdziały: 12pt, pogrubione
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14.4}\bfseries}
+  {\thesubsection.}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% === Spis treści ===
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfil\fontsize{14}{16.8}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\setlength{\cftbeforechapskip}{6pt}
+
+% Spis tabel / rycin — nagłówki
+\renewcommand{\cftlottitlefont}{\hfil\fontsize{14}{16.8}\selectfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfil\fontsize{14}{16.8}\selectfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+% === Przypisy dolne: 10pt ===
+\renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+
+% === Bibliografia ===
+\usepackage[
+  backend=biber,
+  style=numeric,
+  sorting=nyt,
+  maxbibnames=99
+]{biblatex}
+\addbibresource{bibliografia.bib}
+
+% === Hiperłącza (bez kolorowych ramek) ===
+\usepackage[hidelinks,unicode]{hyperref}
+
+% =========================================================================
+%  Polecenia pomocnicze
+% =========================================================================
+
+% Źródło pod ryciną / tabelą / wykresem (10pt, „Źródło:" kursywą)
+\newcommand{\zrodlo}[1]{%
+  \par\vspace{2pt}%
+  {\fontsize{10}{12}\selectfont \textit{Źródło:} #1\par}%
+}
+
+% Rozdział nienumerowany widoczny w spisie treści
+\newcommand{\rozdzialnienumerowany}[1]{%
+  \chapter*{#1}%
+  \addcontentsline{toc}{chapter}{#1}%
+}
+
+% =========================================================================
+%  Dane pracy — UZUPEŁNIJ
+% =========================================================================
+\newcommand{\wydzial}{Wydział Inżynierii i Ekonomii}
+\newcommand{\kierunek}{Nazwa kierunku}
+\newcommand{\imienazwisko}{Imię Nazwisko}
+\newcommand{\nralbumu}{000000}
+\newcommand{\tytulpracy}{Tytuł pracy dyplomowej}
+\newcommand{\rodzajpracy}{Praca licencjacka} % inżynierska / magisterska
+\newcommand{\promotor}{dr Jan Kowalski}
+\newcommand{\rokpracy}{2026}
+\newcommand{\miasto}{Ciechanów} % lub Mława (WNTiS)
+
+% =============================================================================
+\begin{document}
+
+% --- Strona tytułowa (bez numeru strony) ---
+\input{strona-tytulowa}
+
+% --- Spis treści ---
+\tableofcontents
+\clearpage
+
+% --- Treść pracy ---
+\input{rozdzialy/01wstep}
+\input{rozdzialy/02rozdzial01}
+\input{rozdzialy/03rozdzial02}
+\input{rozdzialy/04rozdzial03}
+\input{rozdzialy/05wnioski}
+\input{rozdzialy/06streszczenie}
+
+% --- Piśmiennictwo ---
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Piśmiennictwo}
+\printbibliography[title={Piśmiennictwo}]
+
+% --- Spis tabel ---
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Spis tabel}
+\listoftables
+
+% --- Spis rycin ---
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Spis rycin}
+\listoffigures
+
+% --- Spis wykresów (jeśli występują) ---
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Spis wykresów}
+\listofwykress
+
+\end{document}

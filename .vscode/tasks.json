@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Kompilacja pracy (Docker)",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "run", "--rm",
+        "-v", "${workspaceFolder}/src:/src",
+        "-v", "${workspaceFolder}/build:/build",
+        "-w", "/src",
+        "texlive/texlive:latest",
+        "sh", "-c",
+        "pdflatex -interaction=nonstopmode -output-directory=/build main.tex && biber --input-directory=/build --output-directory=/build main && pdflatex -interaction=nonstopmode -output-directory=/build main.tex && pdflatex -interaction=nonstopmode -output-directory=/build main.tex"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "pdflatex → biber → pdflatex → pdflatex → build/main.pdf"
+    },
+    {
+      "label": "Szybka kompilacja (Docker, bez bibliografii)",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "run", "--rm",
+        "-v", "${workspaceFolder}/src:/src",
+        "-v", "${workspaceFolder}/build:/build",
+        "-w", "/src",
+        "texlive/texlive:latest",
+        "pdflatex", "-interaction=nonstopmode", "-output-directory=/build", "main.tex"
+      ],
+      "problemMatcher": [],
+      "detail": "Pojedynczy przebieg pdflatex (szybki podgląd)"
+    },
+    {
+      "label": "Wyczyść pliki kompilacji",
+      "type": "shell",
+      "command": "Remove-Item",
+      "args": ["-Recurse", "-Force", "${workspaceFolder}/build/*"],
+      "problemMatcher": [],
+      "detail": "Usuwa zawartość katalogu build/"
+    }
+  ]
+}
